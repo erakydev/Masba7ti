@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbih Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Form Container -->
+    <div class="container">
+        <div class="buttons">
+            
+            <button type="button" id="cancelBtn" class="cancel"  ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                
+                <circle cx="24" cy="24" r="24" fill="#202020"/>
+                <path d="M31.5561 19.5617C32.1417 18.976 32.1417 18.0249 31.5561 17.4392C30.9704 16.8536 30.0193 16.8536 29.4336 17.4392L24.5 22.3776L19.5617 17.4439C18.976 16.8583 18.0249 16.8583 17.4392 17.4439C16.8536 18.0296 16.8536 18.9807 17.4392 19.5664L22.3776 24.5L17.4439 29.4383C16.8583 30.024 16.8583 30.9751 17.4439 31.5608C18.0296 32.1464 18.9807 32.1464 19.5664 31.5608L24.5 26.6224L29.4383 31.5561C30.024 32.1417 30.9751 32.1417 31.5608 31.5561C32.1464 30.9704 32.1464 30.0193 31.5608 29.4336L26.6224 24.5L31.5561 19.5617Z" fill="white"/>
+                </svg>
+                </button>
+                <H2>Add New</H2>
+            <button type="button" id="saveTasbih"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#3ACD5B"/>
+                <path d="M32.6234 18.3515C33.1255 18.8202 33.1255 19.5813 32.6234 20.05L22.3388 29.6485C21.8366 30.1172 21.0211 30.1172 20.5189 29.6485L15.3766 24.8492C14.8745 24.3806 14.8745 23.6194 15.3766 23.1508C15.8788 22.6821 16.6943 22.6821 17.1965 23.1508L21.4309 27.0989L30.8075 18.3515C31.3097 17.8828 32.1252 17.8828 32.6274 18.3515H32.6234Z" fill="black"/>
+                </svg>
+                </button>
+        </div>
+        <form id="tasbihForm">
+            <label>Title</label>
+            <input type="text" id="title" placeholder="ziqr">
+
+            <label>Start Value</label>
+            <input type="number" id="startValue" placeholder="start">
+
+            <label>Reminder</label>
+            <input type="number" id="reminder" placeholder="reminder">
+
+            <label>Target Value</label>
+            <input type="number" id="targetValue" placeholder="target">
+
+            <label>Note</label>
+            <textarea id="note" placeholder="" ></textarea>
+
+            <!-- Buttons -->
+
+        </form>
+    </div>
+
+    <!-- Saved Tasbih Display -->
+ 
+</body>
+<script>
+    document.getElementById("cancelBtn").addEventListener("click", function () {
+        window.location.href = "../index.html"; // Change this to the page you want
+    });
+</script>
+<script src="script.js"></script>
+</html>
