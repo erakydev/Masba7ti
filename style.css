@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url("assets/font/digital-7-font/Digital7-rg1mL.ttf");
+}
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centers the tasbih in the viewport */
+    position: relative;
+}
+
+.seb7a {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.add1 {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+
+.add1 {
+    border:none;
+    border-radius: 50%;
+    width:128px;
+    height: 128px;
+    background-color:#ffffff !important;
+    margin-top: 10px; /* Adjust spacing between image and button */
+}
+input::placeholder {
+text-align: center;
+  }
+input {
+    text-align: right;
+    font-family:'Digital-7', sans-serif;  
+    font-size:50px;
+    position: absolute;
+    top: 27%;
+    left: 51.2%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 65px;
+
+    background: transparent;
+    border:none;
+    border-radius:10px;
+    cursor:default;
+}
+input:focus {
+    outline: none;
+    border-radius: 5px;
+}
+input::placeholder {
+    transition: opacity 0.3s ease-in-out;
+}
+
+input:not(:placeholder-shown)::placeholder {
+    opacity: 222; /* Hide completely when text is entered */
+}
+.main{
+    margin-top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+body {
+    margin:0;
+    padding: 0;
+    color: white;
+    background-color:#141414;
+}                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation Bar (Fixed on Top) */
+.nav-bar {
+    transform: translateY(0); /* Start from the top edge */
+    font-weight:500;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 180px;
+    position: fixed;
+    top:0px;
+    z-index: 100;
+}
+.active{
+    transition:ease-in-out 0.3s;
+    font-weight:500;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 180px;
+    position: fixed;
+    top:0px;
+    z-index: 100;
+    background-color:#2A2A2A;
+}
+/* Add margin to push the tasbih counter below */
+.sebha {
+    margin-top: 10px; /* Prevent overlap with nav-bar */
+}
+
+.progress {
+    
+    border-radius: 10px;
+    width: 262px;
+    height: 8px;
+    background-color: #212121;
+    position: absolute;
+}
+
+.bakprogress {
+    border-radius: 10px;
+    width: 0px; /* This will change based on your progress value */
+    height: 8px;
+    background-color: #3ACD5B;
+    position: absolute;
+    top: 50%;
+    left: 0; /* Start from the left edge */
+    transform: translateY(-50%); /* Slight correction to keep the bar centered vertically */
+}
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* or any valid font weight value */
+    font-style: normal;
+  }
+  .ziqr {
+    display: flex;
+    justify-self: center;
+margin-top:20px;
+    text-align: center;
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom:100px; /* Space between the text and the progress bar */
+}
+.menu{
+    width: 48px;
+    height: 48px;
+    background-color:#202020;
+    border-radius:50%;
+    justify-content: center;
+    display: flex;
+    z-index: 100;
+    cursor: pointer;
+    position:relative;
+    left:-23%;
+    top:-50px;
+}
+.down{
+    width: 48px;
+    height: 48px;
+    background-color:#3ACD5B;
+    border-radius:50%;
+    justify-content: center;
+    display: flex;
+    z-index: 100;
+    cursor: pointer;
+    position:relative;
+    right:-23%;
+    top:-50px;
+}
+
+
+.subhanallah {
+    font-size: 20px;
+    margin-bottom: 10px; /* Space between "Subhanallah" and "Reminder" */
+}
+
+
+
+
+.active-black{
+    color:white;
+    background-color: #212121;
+}
+.txt{
+    display: none;
+ margin-top: 70px;
+
+}
+.target{
+    margin-top: 10px;
+}
+.reminder{
+    margin-top: 0px;
+    margin-bottom:10px;
+}
+.txt-show{
+    display: block;
+    transition:ease-in ;
+    z-index: 1000;
+}
+.footer{
+    position: fixed;
+    bottom: 5px;
+    left: 50px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.mode{
+    position: relative;
+    left:67px;
+
+}
+.apperance{
+    position: relative;
+    left: 85px;
+}
+.list{
+    position: relative;
+    left: -50px;
+}
+.vibration{
+    position: relative;
+    left: -185px;
+}
+.sound{
+    position: relative;
+    left: -133px;
+}
+.mode,.apperance,.list,.vibration,.sound{
+  cursor: pointer;
+}
+body.body.dark{
+    background-color: #d9d9d9;
+    color: #141414;
+}
+.ziqr.dark{
+    color: white;
+}
+.high{
+display: none;
+}
